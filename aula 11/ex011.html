@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de verificação de cidadania</h1>
+    Nacionalidade: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        let verificar = function(){
+            let nac = document.getElementById("txtnac").value;
+            let res = document.getElementById("res");
+            res.innerHTML = `País: <strong>${nac}</strong>`;
+            
+            if(nac != "Angola"){
+                res.innerHTML += "<p>Você é estrangeiro!</p>";
+            }
+            else{
+                res.innerHTML += "<p>Você é Angolano!</p>";
+            }
+        }
+    </script>
+</body>
+</html>
