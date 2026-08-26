@@ -3,9 +3,11 @@ body{
     font: normal 15pt Arial;
     color: white;
 }
+
 header{
     text-align: center;
 }
+
 section{
     background: white;
     border-radius: 10px;
@@ -15,6 +17,7 @@ section{
     color: initial;
     box-shadow: 5px 5px 10px #0000006e;
 }
+
 footer{
     text-align: center;
 
