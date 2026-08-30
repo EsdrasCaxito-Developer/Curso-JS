@@ -34,7 +34,7 @@ const verificar = () => {
             if (idade >= 0) {
                 if (idade < 10) {
                     //Criança
-                    img.src = "imagens/crianca_homem.jpg";
+                    img.src = "imagens/criança_homem.jpg";
                 }
                 else if (idade < 21) {
                     //Jovem
